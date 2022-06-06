@@ -1,0 +1,1138 @@
+Print("Loading GUNHUB")
+
+-- GUN HUB
+
+local GunHub = Instance.new("ScreenGui")
+local Picker = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Hubs = Instance.new("TextButton")
+local Games = Instance.new("TextButton")
+local Player = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local HUBS = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local E = Instance.new("TextButton")
+local AH = Instance.new("TextButton")
+local FAH = Instance.new("TextButton")
+local DX = Instance.new("TextButton")
+local EH = Instance.new("TextButton")
+local SH = Instance.new("TextButton")
+local PH = Instance.new("TextButton")
+local UR = Instance.new("TextButton")
+local B = Instance.new("TextButton")
+local Games_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local BW = Instance.new("TextButton")
+local ABR = Instance.new("TextButton")
+local RAP = Instance.new("TextButton")
+local SPS = Instance.new("TextButton")
+local B2 = Instance.new("TextButton")
+local Player_2 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local Speed = Instance.new("TextButton")
+local SC = Instance.new("TextBox")
+local JumpingH = Instance.new("TextButton")
+local JHC = Instance.new("TextBox")
+local B3 = Instance.new("TextButton")
+local SM = Instance.new("Sound")
+
+--Properties:
+
+SM.Parent = GunHub
+SM.SoundId = "rbxassetid://645252874"
+SM.Playing = true
+SM.Looped = true
+
+GunHub.Name = "GunHub"
+GunHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GunHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Picker.Name = "Picker"
+Picker.Parent = GunHub
+Picker.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Picker.BackgroundTransparency = -0.020
+Picker.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Picker.BorderSizePixel = 0
+Picker.Position = UDim2.new(0.207643315, 0, 0.198319331, 0)
+Picker.Size = UDim2.new(0, 459, 0, 411)
+Picker.Visible = true
+
+Frame.Parent = Picker
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.BackgroundTransparency = -0.020
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 459, 0, 53)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.03050109, 0, 0.132075474, 0)
+TextLabel.Size = UDim2.new(0, 431, 0, 39)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "MADE BY 10PMNJ2"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Hubs.Name = "Hubs"
+Hubs.Parent = Picker
+Hubs.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+Hubs.BorderSizePixel = 0
+Hubs.Position = UDim2.new(0.0326797403, 0, 0.180048659, 0)
+Hubs.Size = UDim2.new(0, 430, 0, 50)
+Hubs.Text = "HUBS"
+Hubs.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hubs.TextScaled = true
+Hubs.TextSize = 14.000
+Hubs.TextWrapped = true
+Hubs.MouseButton1Click:Connect(function()
+	Picker.Visible = false
+	HUBS.Visible = true
+end)
+
+Games.Name = "Games"
+Games.Parent = Picker
+Games.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+Games.BorderSizePixel = 0
+Games.Position = UDim2.new(0.0326797664, 0, 0.374695867, 0)
+Games.Size = UDim2.new(0, 430, 0, 50)
+Games.Text = "GAMES"
+Games.TextColor3 = Color3.fromRGB(0, 0, 0)
+Games.TextScaled = true
+Games.TextSize = 14.000
+Games.TextWrapped = true
+Games.MouseButton1Click:Connect(function()
+	Picker.Visible = false
+	Games_2.Visible = true
+end)
+
+Player.Name = "Player"
+Player.Parent = Picker
+Player.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+Player.BorderSizePixel = 0
+Player.Position = UDim2.new(0.0305010919, 0, 0.562043786, 0)
+Player.Size = UDim2.new(0, 430, 0, 50)
+Player.Text = "PLAYER"
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextScaled = true
+Player.TextSize = 14.000
+Player.TextWrapped = true
+Player.MouseButton1Click:Connect(function()
+	Picker.Visible = false
+	Player_2.Visible = true
+end)
+
+Close.Name = "Close"
+Close.Parent = Picker
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.0305010919, 0, 0.768856406, 0)
+Close.Size = UDim2.new(0, 430, 0, 50)
+Close.Text = "CLOSE"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+	GunHub:Destroy()
+end)
+
+HUBS.Name = "HUBS"
+HUBS.Parent = GunHub
+HUBS.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+HUBS.BackgroundTransparency = -0.020
+HUBS.BorderColor3 = Color3.fromRGB(27, 42, 53)
+HUBS.BorderSizePixel = 0
+HUBS.Position = UDim2.new(0.207643315, 0, 0.198319331, 0)
+HUBS.Size = UDim2.new(0, 459, 0, 411)
+HUBS.Visible = false
+
+Frame_2.Parent = HUBS
+Frame_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame_2.BackgroundTransparency = -0.020
+Frame_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(0, 459, 0, 53)
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.03050109, 0, 0.132075474, 0)
+TextLabel_2.Size = UDim2.new(0, 431, 0, 39)
+TextLabel_2.Font = Enum.Font.Nunito
+TextLabel_2.Text = "MADE BY 10PMNJ2"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+E.Name = "E"
+E.Parent = HUBS
+E.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+E.BorderSizePixel = 0
+E.Position = UDim2.new(0.0326797403, 0, 0.180048659, 0)
+E.Size = UDim2.new(0, 94, 0, 50)
+E.Text = "ELECTOWARE '"
+E.TextColor3 = Color3.fromRGB(255, 255, 255)
+E.TextScaled = true
+E.TextSize = 14.000
+E.TextWrapped = true
+E.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/ayoyao3744/Electroware/main/Main%20Electroware%20Hub"), true))()
+end)
+
+AH.Name = "AH"
+AH.Parent = HUBS
+AH.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+AH.BorderSizePixel = 0
+AH.Position = UDim2.new(0.0326797403, 0, 0.374695867, 0)
+AH.Size = UDim2.new(0, 94, 0, 50)
+AH.Text = "Azure hub"
+AH.TextColor3 = Color3.fromRGB(255, 255, 255)
+AH.TextScaled = true
+AH.TextSize = 14.000
+AH.TextWrapped = true
+AH.MouseButton1Click:Connect(function()
+	print("Dumb")
+end)
+
+FAH.Name = "FAH"
+FAH.Parent = HUBS
+FAH.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+FAH.BorderSizePixel = 0
+FAH.Position = UDim2.new(0.03050109, 0, 0.562043786, 0)
+FAH.Size = UDim2.new(0, 107, 0, 50)
+FAH.Text = "FE ANCIENT HUB"
+FAH.TextColor3 = Color3.fromRGB(255, 255, 255)
+FAH.TextScaled = true
+FAH.TextSize = 39.000
+FAH.TextWrapped = true
+FAH.MouseButton1Click:Connect(function()
+	print("DUMB")
+end)
+
+DX.Name = "DX"
+DX.Parent = HUBS
+DX.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
+DX.BorderSizePixel = 0
+DX.Position = UDim2.new(0.03050109, 0, 0.768856347, 0)
+DX.Size = UDim2.new(0, 95, 0, 50)
+DX.Text = "Domain X"
+DX.TextColor3 = Color3.fromRGB(255, 255, 255)
+DX.TextScaled = true
+DX.TextSize = 14.000
+DX.TextWrapped = true
+DX.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://shlex.dev/release/domainx/latest.lua',true))()
+end)
+
+EH.Name = "EH"
+EH.Parent = HUBS
+EH.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+EH.BorderSizePixel = 0
+EH.Position = UDim2.new(0.34204793, 0, 0.374695867, 0)
+EH.Size = UDim2.new(0, 94, 0, 50)
+EH.Text = "EZ HUB"
+EH.TextColor3 = Color3.fromRGB(255, 255, 255)
+EH.TextScaled = true
+EH.TextSize = 14.000
+EH.TextWrapped = true
+EH.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+SH.Name = "SH"
+SH.Parent = HUBS
+SH.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+SH.BorderSizePixel = 0
+SH.Position = UDim2.new(0.34204793, 0, 0.562043786, 0)
+SH.Size = UDim2.new(0, 94, 0, 50)
+SH.Text = "Sakura hub"
+SH.TextColor3 = Color3.fromRGB(255, 255, 255)
+SH.TextScaled = true
+SH.TextSize = 14.000
+SH.TextWrapped = true
+SH.MouseButton1Click:Connect(function()
+	print("Dumb")
+end)
+
+PH.Name = "PH"
+PH.Parent = HUBS
+PH.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+PH.BorderSizePixel = 0
+PH.Position = UDim2.new(0.34204793, 0, 0.180048659, 0)
+PH.Size = UDim2.new(0, 94, 0, 50)
+PH.Text = "Potato Hub"
+PH.TextColor3 = Color3.fromRGB(255, 255, 255)
+PH.TextScaled = true
+PH.TextSize = 14.000
+PH.TextWrapped = true
+PH.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://www.potato-hub.com/PotatoHub.lua'),true))()
+end)
+
+UR.Name = "UR"
+UR.Parent = HUBS
+UR.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+UR.BorderSizePixel = 0
+UR.Position = UDim2.new(0.3420479, 0, 0.766423345, 0)
+UR.Size = UDim2.new(0, 94, 0, 50)
+UR.Text = "Ultra Rover"
+UR.TextColor3 = Color3.fromRGB(255, 255, 255)
+UR.TextScaled = true
+UR.TextSize = 14.000
+UR.TextWrapped = true
+UR.MouseButton1Click:Connect(function()
+	-- Gui to Lua
+	-- Version: 3.2
+
+	-- Instances:
+
+	local TextButton = Instance.new("TextButton")
+	local UltraRover = Instance.new("ScreenGui")
+	local LOGIN = Instance.new("Frame")
+	local Getkey = Instance.new("TextButton")
+	local Submit = Instance.new("TextButton")
+	local TextBox = Instance.new("TextBox")
+	local MAINUI = Instance.new("Frame")
+	local PlayerB = Instance.new("TextButton")
+	local HubsB = Instance.new("TextButton")
+	local PlayerB_2 = Instance.new("TextButton")
+	local CloseB = Instance.new("TextButton")
+	local Player = Instance.new("Frame")
+	local Speed = Instance.new("TextButton")
+	local SpeedChanger = Instance.new("TextBox")
+	local Jumpheight = Instance.new("TextButton")
+	local JumpHeightChanger = Instance.new("TextBox")
+	local Hubs = Instance.new("Frame")
+	local LH = Instance.new("TextButton")
+	local OH = Instance.new("TextButton")
+	local D = Instance.new("TextButton")
+	local LIH = Instance.new("TextButton")
+	local C = Instance.new("TextButton")
+	local Games = Instance.new("Frame")
+	local Arsenal = Instance.new("ImageButton")
+	local AT = Instance.new("TextLabel")
+	local PSX = Instance.new("ImageButton")
+	local PT = Instance.new("TextLabel")
+	local Bedwars = Instance.new("ImageButton")
+	local BT = Instance.new("TextLabel")
+	local SPS = Instance.new("ImageButton")
+	local ST = Instance.new("TextLabel")
+	local PD = Instance.new("ImageButton")
+	local PT_2 = Instance.new("TextLabel")
+	local TextButton = Instance.new("TextButton")
+
+	--Properties:
+
+	UltraRover.Name = "UltraRover"
+	UltraRover.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	UltraRover.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	TextButton.Parent = UltraRover
+	TextButton.BackgroundColor3 = Color3.fromRGB(164, 255, 198)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(-0.0573248416, 0, 0.613445401, 0)
+	TextButton.Size = UDim2.new(0, 200, 0, 50)
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.Text = "OPEN"
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextScaled = true
+	TextButton.TextSize = 14.000
+	TextButton.TextWrapped = true
+	TextButton.Visible = false
+	TextButton.MouseButton1Click:Connect(function()
+		MAINUI.Visible = true
+	end)
+
+	LOGIN.Name = "LOGIN"
+	LOGIN.Parent = UltraRover
+	LOGIN.BackgroundColor3 = Color3.fromRGB(49, 58, 61)
+	LOGIN.BorderSizePixel = 0
+	LOGIN.Position = UDim2.new(0.387261182, 0, 0.322689086, 0)
+	LOGIN.Size = UDim2.new(0, 239, 0, 278)
+	LOGIN.Visible =  true
+	LOGIN.Active = true
+	LOGIN.Draggable = true
+
+	Getkey.Name = "Get key"
+	Getkey.Parent = LOGIN
+	Getkey.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	Getkey.BorderSizePixel = 0
+	Getkey.Position = UDim2.new(0.0796789527, 0, 0.701438844, 0)
+	Getkey.Size = UDim2.new(0, 200, 0, 50)
+	Getkey.Font = Enum.Font.FredokaOne
+	Getkey.Text = "Get key"
+	Getkey.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Getkey.TextScaled = true
+	Getkey.TextSize = 14.000
+	Getkey.TextWrapped = true
+	Getkey.MouseButton1Click:Connect(function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Copied", Text = "Link: https://bst.wtf/jr7moe", Icon = "http://www.roblox.com/asset/?id=93360340", Duration = 4})
+	end)
+
+	Submit.Name = "Submit"
+	Submit.Parent = LOGIN
+	Submit.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	Submit.BorderSizePixel = 0
+	Submit.Position = UDim2.new(0.0796789527, 0, 0.442446053, 0)
+	Submit.Size = UDim2.new(0, 200, 0, 50)
+	Submit.Font = Enum.Font.FredokaOne
+	Submit.Text = "Submit"
+	Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Submit.TextScaled = true
+	Submit.TextSize = 14.000
+	Submit.TextWrapped = true
+	Submit.MouseButton1Click:Connect(function()
+		if TextBox.Text == "dsahdkhashkjashdkKA123dsaasqas" then
+			game.StarterGui:SetCore("SendNotification", {Title = "Correct", Text = "Correct key loading GUI", Icon = "http://www.roblox.com/asset/?id=93360340", Duration = 4})
+			LOGIN.Visible = false
+			MAINUI.Visible = true
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Wrong", Text = "WRONG KEY", Icon = "http://www.roblox.com/asset/?id=93360340", Duration = 4})
+		end
+	end)
+
+	TextBox.Parent = LOGIN
+	TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	TextBox.Position = UDim2.new(0.079497911, 0, 0.0467625894, 0)
+	TextBox.Size = UDim2.new(0, 200, 0, 98)
+	TextBox.Font = Enum.Font.FredokaOne
+	TextBox.PlaceholderColor3 = Color3.fromRGB(56, 56, 56)
+	TextBox.PlaceholderText = "Enter key here"
+	TextBox.Text = ""
+	TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox.TextScaled = true
+	TextBox.TextSize = 14.000
+	TextBox.TextWrapped = true
+
+	MAINUI.Name = "MAINUI"
+	MAINUI.Parent = UltraRover
+	MAINUI.BackgroundColor3 = Color3.fromRGB(49, 58, 61)
+	MAINUI.BorderSizePixel = 0
+	MAINUI.Position = UDim2.new(0.27770707, 0, 0.149579838, 0)
+	MAINUI.Size = UDim2.new(0, 432, 0, 416)
+	MAINUI.Visible = false
+	MAINUI.Active = true
+	MAINUI.Draggable = true
+
+	PlayerB.Name = "PlayerB"
+	PlayerB.Parent = MAINUI
+	PlayerB.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+	PlayerB.BorderSizePixel = 0
+	PlayerB.Position = UDim2.new(0.233796299, 0, 0.139423072, 0)
+	PlayerB.Size = UDim2.new(0, 224, 0, 50)
+	PlayerB.Font = Enum.Font.FredokaOne
+	PlayerB.Text = "Player"
+	PlayerB.TextColor3 = Color3.fromRGB(165, 165, 165)
+	PlayerB.TextScaled = true
+	PlayerB.TextSize = 14.000
+	PlayerB.TextWrapped = true
+	PlayerB.MouseButton1Click:Connect(function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Player", Text = "Player shit loading", Icon = "http://www.roblox.com/asset/?id=93360340", Duration = 4})
+		MAINUI.Visible = false
+		Player.Visible = true
+	end)
+
+	HubsB.Name = "HubsB"
+	HubsB.Parent = MAINUI
+	HubsB.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+	HubsB.BorderSizePixel = 0
+	HubsB.Position = UDim2.new(0.240740746, 0, 0.367788464, 0)
+	HubsB.Size = UDim2.new(0, 224, 0, 50)
+	HubsB.Font = Enum.Font.FredokaOne
+	HubsB.Text = "Hubs"
+	HubsB.TextColor3 = Color3.fromRGB(165, 165, 165)
+	HubsB.TextScaled = true
+	HubsB.TextSize = 14.000
+	HubsB.TextWrapped = true
+	HubsB.MouseButton1Click:Connect(function()
+		MAINUI.Visible = false
+		Hubs.Visible = true
+	end)
+
+	PlayerB_2.Name = "Games"
+	PlayerB_2.Parent = MAINUI
+	PlayerB_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+	PlayerB_2.BorderSizePixel = 0
+	PlayerB_2.Position = UDim2.new(0.233796299, 0, 0.596153796, 0)
+	PlayerB_2.Size = UDim2.new(0, 224, 0, 50)
+	PlayerB_2.Font = Enum.Font.FredokaOne
+	PlayerB_2.Text = "Games"
+	PlayerB_2.TextColor3 = Color3.fromRGB(165, 165, 165)
+	PlayerB_2.TextScaled = true
+	PlayerB_2.TextSize = 14.000
+	PlayerB_2.TextWrapped = true
+	PlayerB_2.MouseButton1Click:Connect(function()
+		MAINUI.Visible = false
+		Games.Visible = true
+	end)
+
+	CloseB.Name = "CloseB"
+	CloseB.Parent = MAINUI
+	CloseB.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	CloseB.BorderSizePixel = 0
+	CloseB.Position = UDim2.new(0.240740746, 0, 0.798076808, 0)
+	CloseB.Size = UDim2.new(0, 224, 0, 50)
+	CloseB.Font = Enum.Font.FredokaOne
+	CloseB.Text = "CLOSE"
+	CloseB.TextColor3 = Color3.fromRGB(200, 200, 200)
+	CloseB.TextScaled = true
+	CloseB.TextSize = 14.000
+	CloseB.TextWrapped = true
+	CloseB.MouseButton1Click:Connect(function()
+		MAINUI.Visible = false
+		TextButton.Visible = true
+	end)
+
+	Player.Name = "Player"
+	Player.Parent = UltraRover
+	Player.BackgroundColor3 = Color3.fromRGB(49, 58, 61)
+	Player.BorderSizePixel = 0
+	Player.Position = UDim2.new(0.27770707, 0, 0.149579838, 0)
+	Player.Size = UDim2.new(0, 432, 0, 416)
+	Player.Visible = false
+	Player.Active = true
+	Player.Draggable = true
+
+	Speed.Name = "Speed"
+	Speed.Parent = Player
+	Speed.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+	Speed.BorderSizePixel = 0
+	Speed.Position = UDim2.new(0.196759254, 0, 0.15384616, 0)
+	Speed.Size = UDim2.new(0, 260, 0, 50)
+	Speed.Font = Enum.Font.SourceSansBold
+	Speed.Text = "Speed"
+	Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Speed.TextScaled = true
+	Speed.TextSize = 14.000
+	Speed.TextWrapped = true
+	Speed.MouseButton1Click:Connect(function(v)
+		v = SpeedChanger.Text
+		local p = game.Players.LocalPlayer
+		p.Character.Humanoid.WalkSpeed = v
+	end)
+
+	SpeedChanger.Name = "SpeedChanger"
+	SpeedChanger.Parent = Speed
+	SpeedChanger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	SpeedChanger.BackgroundTransparency = 1.000
+	SpeedChanger.Position = UDim2.new(0, 0, 1, 0)
+	SpeedChanger.Size = UDim2.new(0, 260, 0, 50)
+	SpeedChanger.Font = Enum.Font.FredokaOne
+	SpeedChanger.PlaceholderColor3 = Color3.fromRGB(247, 247, 247)
+	SpeedChanger.PlaceholderText = "ENTER SPEED (ONLY NUMBERS)"
+	SpeedChanger.Text = ""
+	SpeedChanger.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SpeedChanger.TextScaled = true
+	SpeedChanger.TextSize = 14.000
+	SpeedChanger.TextWrapped = true
+
+	Jumpheight.Name = "Jumpheight"
+	Jumpheight.Parent = Player
+	Jumpheight.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+	Jumpheight.BorderSizePixel = 0
+	Jumpheight.Position = UDim2.new(0.182870358, 0, 0.439903855, 0)
+	Jumpheight.Size = UDim2.new(0, 260, 0, 50)
+	Jumpheight.Font = Enum.Font.SourceSansBold
+	Jumpheight.Text = "Jumpheight"
+	Jumpheight.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Jumpheight.TextScaled = true
+	Jumpheight.TextSize = 14.000
+	Jumpheight.TextWrapped = true
+	Jumpheight.MouseButton1Click:Connect(function(v)
+		v = JumpHeightChanger.Text
+		game.Players.LocalPlayer.Character.Humanoid.JumpHeight = v
+	end)
+
+	JumpHeightChanger.Name = "JumpHeightChanger"
+	JumpHeightChanger.Parent = Jumpheight
+	JumpHeightChanger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	JumpHeightChanger.BackgroundTransparency = 1.000
+	JumpHeightChanger.Position = UDim2.new(0, 0, 1, 0)
+	JumpHeightChanger.Size = UDim2.new(0, 260, 0, 50)
+	JumpHeightChanger.Font = Enum.Font.FredokaOne
+	JumpHeightChanger.PlaceholderColor3 = Color3.fromRGB(247, 247, 247)
+	JumpHeightChanger.PlaceholderText = "ENTER JUMPHEIGHT (ONLY NUMBERS)"
+	JumpHeightChanger.Text = ""
+	JumpHeightChanger.TextColor3 = Color3.fromRGB(255, 255, 255)
+	JumpHeightChanger.TextScaled = true
+	JumpHeightChanger.TextSize = 14.000
+	JumpHeightChanger.TextWrapped = true
+
+	Hubs.Name = "Hubs"
+	Hubs.Parent = UltraRover
+	Hubs.BackgroundColor3 = Color3.fromRGB(49, 58, 61)
+	Hubs.BorderSizePixel = 0
+	Hubs.Position = UDim2.new(0.2242039, 0, 0.149579823, 0)
+	Hubs.Size = UDim2.new(0, 432, 0, 416)
+	Hubs.Visible = false
+	Hubs.Active = true
+	Hubs.Draggable = true
+
+	LH.Name = "LH"
+	LH.Parent = Hubs
+	LH.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+	LH.Position = UDim2.new(0.0925925896, 0, 0.0769230798, 0)
+	LH.Size = UDim2.new(0, 113, 0, 74)
+	LH.Font = Enum.Font.FredokaOne
+	LH.Text = "Lazy's hub"
+	LH.TextColor3 = Color3.fromRGB(255, 255, 255)
+	LH.TextScaled = true
+	LH.TextSize = 14.000
+	LH.TextWrapped = true
+	LH.MouseButton1Click:Connect(function()
+		-- New Loader
+		repeat wait() until game:IsLoaded()
+
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/Scripts/main/"..game.PlaceId..".lua"))()
+		-- Games : A Universal Day, A 0ne Piece Game, Demonfall, Project Baki 2, Reaper 2, Anime Rifts, Stand Upright: Rebooted.
+	end)
+
+	OH.Name = "OH"
+	OH.Parent = Hubs
+	OH.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+	OH.Position = UDim2.new(0.0925925896, 0, 0.341346145, 0)
+	OH.Size = UDim2.new(0, 113, 0, 74)
+	OH.Font = Enum.Font.FredokaOne
+	OH.Text = "Owl hub"
+	OH.TextColor3 = Color3.fromRGB(255, 255, 255)
+	OH.TextScaled = true
+	OH.TextSize = 14.000
+	OH.TextWrapped = true
+	OH.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+	end)
+
+	D.Name = "D"
+	D.Parent = Hubs
+	D.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+	D.Position = UDim2.new(0.0925925896, 0, 0.625, 0)
+	D.Size = UDim2.new(0, 113, 0, 74)
+	D.Font = Enum.Font.FredokaOne
+	D.Text = "Darkware"
+	D.TextColor3 = Color3.fromRGB(255, 255, 255)
+	D.TextScaled = true
+	D.TextSize = 14.000
+	D.TextWrapped = true
+	D.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader"), true))()
+	end)
+
+	C.Name = "C"
+	C.Parent = Hubs
+	C.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+	C.Position = UDim2.new(0.604166687, 0, 0.360576928, 0)
+	C.Size = UDim2.new(0, 113, 0, 74)
+	C.Font = Enum.Font.FredokaOne
+	C.Text = "C00LKID Hub"
+	C.TextColor3 = Color3.fromRGB(255, 255, 255)
+	C.TextScaled = true
+	C.TextSize = 14.000
+	C.TextWrapped = true
+	C.MouseButton1Click:Connect(function()
+		loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+	end)
+
+	Games.Name = "Games"
+	Games.Parent = UltraRover
+	Games.BackgroundColor3 = Color3.fromRGB(49, 58, 61)
+	Games.BorderSizePixel = 0
+	Games.Position = UDim2.new(0.27770707, 0, 0.149579838, 0)
+	Games.Size = UDim2.new(0, 432, 0, 416)
+	Games.Visible = false
+	Games.Active = true
+	Games.Draggable = true
+
+	Arsenal.Name = "Arsenal"
+	Arsenal.Parent = Games
+	Arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Arsenal.BorderSizePixel = 0
+	Arsenal.Position = UDim2.new(0.0671296269, 0, 0.0552884601, 0)
+	Arsenal.Size = UDim2.new(0, 86, 0, 92)
+	Arsenal.Image = "rbxassetid://8446589311"
+	Arsenal.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()
+	end)
+
+	AT.Name = "AT"
+	AT.Parent = Arsenal
+	AT.BackgroundColor3 = Color3.fromRGB(7, 7, 7)
+	AT.BorderSizePixel = 0
+	AT.Position = UDim2.new(-0.00675925612, 0, 0.990769207, 0)
+	AT.Size = UDim2.new(0, 86, 0, 50)
+	AT.Font = Enum.Font.FredokaOne
+	AT.Text = "Arsenal"
+	AT.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AT.TextScaled = true
+	AT.TextSize = 14.000
+	AT.TextWrapped = true
+
+	PSX.Name = "PSX"
+	PSX.Parent = Games
+	PSX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	PSX.BorderSizePixel = 0
+	PSX.Position = UDim2.new(0.708333313, 0, 0.0552884601, 0)
+	PSX.Size = UDim2.new(0, 86, 0, 92)
+	PSX.Image = "rbxassetid://7385976207"
+	PSX.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://dexhub.xyz/loader.lua"))()
+	end)
+
+	PT.Name = "PT"
+	PT.Parent = PSX
+	PT.BackgroundColor3 = Color3.fromRGB(7, 7, 7)
+	PT.BorderSizePixel = 0
+	PT.Position = UDim2.new(-0.00675925612, 0, 0.990769207, 0)
+	PT.Size = UDim2.new(0, 86, 0, 50)
+	PT.Font = Enum.Font.FredokaOne
+	PT.Text = "Pet simulator x"
+	PT.TextColor3 = Color3.fromRGB(255, 255, 255)
+	PT.TextScaled = true
+	PT.TextSize = 14.000
+	PT.TextWrapped = true
+
+	Bedwars.Name = "Bedwars"
+	Bedwars.Parent = Games
+	Bedwars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Bedwars.BorderSizePixel = 0
+	Bedwars.Position = UDim2.new(0.418981493, 0, 0.0528846122, 0)
+	Bedwars.Size = UDim2.new(0, 86, 0, 92)
+	Bedwars.Image = "rbxassetid://7883537164"
+	Bedwars.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+	end)
+
+	BT.Name = "BT"
+	BT.Parent = Bedwars
+	BT.BackgroundColor3 = Color3.fromRGB(7, 7, 7)
+	BT.BorderSizePixel = 0
+	BT.Position = UDim2.new(-0.00675925612, 0, 0.990769207, 0)
+	BT.Size = UDim2.new(0, 86, 0, 50)
+	BT.Font = Enum.Font.FredokaOne
+	BT.Text = "Bedwars"
+	BT.TextColor3 = Color3.fromRGB(255, 255, 255)
+	BT.TextScaled = true
+	BT.TextSize = 14.000
+	BT.TextWrapped = true
+
+	SPS.Name = "SPS"
+	SPS.Parent = Games
+	SPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	SPS.BorderSizePixel = 0
+	SPS.Position = UDim2.new(0.0671296269, 0, 0.475961536, 0)
+	SPS.Size = UDim2.new(0, 86, 0, 92)
+	SPS.Image = "rbxassetid://9429182848"
+	SPS.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Luciquad/credit/main/sonicspeedsimulator.lua"))()
+	end)
+
+	ST.Name = "ST"
+	ST.Parent = SPS
+	ST.BackgroundColor3 = Color3.fromRGB(7, 7, 7)
+	ST.BorderSizePixel = 0
+	ST.Position = UDim2.new(-0.00675925612, 0, 0.990769207, 0)
+	ST.Size = UDim2.new(0, 86, 0, 50)
+	ST.Font = Enum.Font.FredokaOne
+	ST.Text = "Sonic speed simulator"
+	ST.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ST.TextScaled = true
+	ST.TextSize = 14.000
+	ST.TextWrapped = true
+
+	PD.Name = "PD"
+	PD.Parent = Games
+	PD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	PD.BorderSizePixel = 0
+	PD.Position = UDim2.new(0.418981493, 0, 0.473557681, 0)
+	PD.Size = UDim2.new(0, 86, 0, 92)
+	PD.Image = "rbxassetid://8813558202"
+	PD.MouseButton1Click:Connect(function()
+		local minimum = 150000000000 -- enter your minimum robux donated amount here
+
+		loadstring(game:HttpGet("https://hypernite.xyz/Scripts/Ukraine.lua"))()
+		if game.PlaceId ~= 8737602449 then return end -- failed attempt at autoexec compatability below, feel free to try and fix it
+
+		if not game.IsLoaded then game.Loaded:Wait() end
+		--wait(.5)
+
+		local highestdono = 0
+		local highestplr = nil
+
+		--writefile("MinimumDonation.txt",tostring(minimum))
+
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			repeat wait() until v:FindFirstChild("leaderstats")
+		end
+
+		local function getDonated(plr)
+			local stats = plr:WaitForChild("leaderstats")
+			local donated = stats:FindFirstChild("Donated")
+			if donated == nil then
+				return 0
+			end
+			return donated.Value
+		end
+
+		local function shop() -- infinite yield serverhop
+			local x = {}
+			for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+				if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+					x[#x + 1] = v.id
+				end
+			end
+			if #x > 0 then
+				game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+				game:GetService("GuiService").UiMessageChanged:Wait()
+				shop()
+			else
+				return error("Couldn't find a server.")
+			end
+		end
+
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if i == 1 then continue end
+			local dono = getDonated(v)
+			if dono > highestdono then
+				highestdono = dono
+				highestplr = v
+			end
+		end
+
+		if highestdono >= minimum then
+			local richPlayers = {}
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if i == 1 then continue end
+				if getDonated(v) >= minimum then
+					table.insert(richPlayers,v)
+				end
+			end
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Richest player found!",
+				Text = highestplr.Name .. " has donated " .. highestdono .. "R$",
+				Duration = 15
+			})
+			table.foreach(richPlayers,function(i)
+				print(richPlayers[i].Name .. " donated " .. tostring(getDonated(richPlayers[i])) .. "R$")
+			end)
+		else
+			shop()
+
+		end
+	end)
+
+	PT_2.Name = "PT"
+	PT_2.Parent = PD
+	PT_2.BackgroundColor3 = Color3.fromRGB(7, 7, 7)
+	PT_2.BorderSizePixel = 0
+	PT_2.Position = UDim2.new(-0.00675925612, 0, 0.990769207, 0)
+	PT_2.Size = UDim2.new(0, 86, 0, 50)
+	PT_2.Font = Enum.Font.FredokaOne
+	PT_2.Text = "Pls donate"
+	PT_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	PT_2.TextScaled = true
+	PT_2.TextSize = 14.000
+	PT_2.TextWrapped = true	
+end)
+
+B.Name = "B"
+B.Parent = HUBS
+B.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+B.BorderSizePixel = 0
+B.Position = UDim2.new(0.686274469, 0, 0.766423345, 0)
+B.Size = UDim2.new(0, 94, 0, 50)
+B.Text = "Back"
+B.TextColor3 = Color3.fromRGB(255, 255, 255)
+B.TextScaled = true
+B.TextSize = 14.000
+B.TextWrapped = true
+B.MouseButton1Click:Connect(function()
+	HUBS.Visible = false
+	Picker.Visible = true
+end)
+
+Games_2.Name = "Games"
+Games_2.Parent = GunHub
+Games_2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Games_2.BackgroundTransparency = -0.020
+Games_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Games_2.BorderSizePixel = 0
+Games_2.Position = UDim2.new(0.207643315, 0, 0.198319331, 0)
+Games_2.Size = UDim2.new(0, 459, 0, 411)
+Games_2.Visible = false
+Games_2.Active = true
+Games_2.Draggable = true
+
+Frame_3.Parent = Games_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame_3.BackgroundTransparency = -0.020
+Frame_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame_3.BorderSizePixel = 0
+Frame_3.Size = UDim2.new(0, 459, 0, 53)
+
+TextLabel_3.Parent = Frame_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.03050109, 0, 0.132075474, 0)
+TextLabel_3.Size = UDim2.new(0, 431, 0, 39)
+TextLabel_3.Font = Enum.Font.Nunito
+TextLabel_3.Text = "MADE BY 10PMNJ2"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+BW.Name = "BW"
+BW.Parent = Games_2
+BW.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+BW.BorderSizePixel = 0
+BW.Position = UDim2.new(0.0326797403, 0, 0.180048659, 0)
+BW.Size = UDim2.new(0, 182, 0, 50)
+BW.Text = "Bedwars / by easy.gg"
+BW.TextColor3 = Color3.fromRGB(0, 0, 0)
+BW.TextScaled = true
+BW.TextSize = 14.000
+BW.TextWrapped = true
+BW.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+ABR.Name = "ABR"
+ABR.Parent = Games_2
+ABR.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+ABR.BorderSizePixel = 0
+ABR.Position = UDim2.new(0.0326797403, 0, 0.374695867, 0)
+ABR.Size = UDim2.new(0, 160, 0, 50)
+ABR.Text = "Arsenal / By rolve commuity"
+ABR.TextColor3 = Color3.fromRGB(0, 0, 0)
+ABR.TextScaled = true
+ABR.TextSize = 14.000
+ABR.TextWrapped = true
+ABR.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+RAP.Name = "RAP"
+RAP.Parent = Games_2
+RAP.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+RAP.BorderSizePixel = 0
+RAP.Position = UDim2.new(0.03050109, 0, 0.574209273, 0)
+RAP.Size = UDim2.new(0, 161, 0, 50)
+RAP.Text = "Raise a floppa / by Floppa#1"
+RAP.TextColor3 = Color3.fromRGB(255, 255, 255)
+RAP.TextScaled = true
+RAP.TextSize = 14.000
+RAP.TextWrapped = true
+RAP.MouseButton1Click:Connect(function()
+	--Game Name : raise a floppa ðŸ”‘
+	--Game Link : https://www.roblox.com/games/9203864304
+--[[Script Options :
+	[+] Auto Click Floppa
+	[+] Auto Collect Money
+	[+] Auto Request Rent
+	[+] Auto Request Raise
+	[+] Auto Buy
+	[+] Instant Max Alter
+	[+] Auto Praise Alter
+	[+] Auto Feed Floppa
+	[+] Auto Feed Baby Floppas
+	[+] Auto Clean Floppa Poop
+	[+] Auto Fertalize Cat Nip Plant
+	[+] Teleport to Backroom
+	[+] Bingus ESP
+]]
+
+	--Script :
+	_G.RedGUI = false
+	_G.Theme = "Dark" -- Must disable or remove _G.RedGUI to use
+	--Themes: Light, Dark, Mocha, Aqua and Jester
+	_G.V3rmillion = true
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/raiseafloppa.lua"))()
+end)
+
+
+
+SPS.Name = "SPS"
+SPS.Parent = Games_2
+SPS.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+SPS.BorderSizePixel = 0
+SPS.Position = UDim2.new(0.03050109, 0, 0.768856347, 0)
+SPS.Size = UDim2.new(0, 167, 0, 50)
+SPS.Text = "Sonic speed simulator"
+SPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+SPS.TextScaled = true
+SPS.TextSize = 14.000
+SPS.TextWrapped = true
+SPS.MouseButton1Click:Connect(function()
+	--Game Name : raise a floppa ðŸ”‘
+	--Game Link : https://www.roblox.com/games/9203864304
+--[[Script Options :
+	[+] Auto Click Floppa
+	[+] Auto Collect Money
+	[+] Auto Request Rent
+	[+] Auto Request Raise
+	[+] Auto Buy
+	[+] Instant Max Alter
+	[+] Auto Praise Alter
+	[+] Auto Feed Floppa
+	[+] Auto Feed Baby Floppas
+	[+] Auto Clean Floppa Poop
+	[+] Auto Fertalize Cat Nip Plant
+	[+] Teleport to Backroom
+	[+] Bingus ESP
+]]
+
+	--Script :
+	_G.RedGUI = true
+	_G.Theme = "Dark" -- Must disable or remove _G.RedGUI to use
+	--Themes: Light, Dark, Mocha, Aqua and Jester
+	_G.V3rmillion = true
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/raiseafloppa.lua"))()
+end)
+
+B2.Name = "B2"
+B2.Parent = Games_2
+B2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+B2.BorderSizePixel = 0
+B2.Position = UDim2.new(0.686274469, 0, 0.766423345, 0)
+B2.Size = UDim2.new(0, 94, 0, 50)
+B2.Text = "Back"
+B2.TextColor3 = Color3.fromRGB(255, 255, 255)
+B2.TextScaled = true
+B2.TextSize = 14.000
+
+B2.TextWrapped = true
+B2.MouseButton1Click:Connect(function()
+	Games_2.Visible = false
+	Picker.Visible = true
+end)
+Player_2.Name = "Player"
+Player_2.Parent = GunHub
+Player_2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player_2.BackgroundTransparency = -0.020
+Player_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Player_2.BorderSizePixel = 0
+Player_2.Position = UDim2.new(0.198726118, 0, 0.193277314, 0)
+Player_2.Size = UDim2.new(0, 459, 0, 411)
+Player_2.Visible = false
+
+Frame_4.Parent = Player_2
+Frame_4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame_4.BackgroundTransparency = -0.020
+Frame_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame_4.BorderSizePixel = 0
+Frame_4.Size = UDim2.new(0, 459, 0, 53)
+
+TextLabel_4.Parent = Frame_4
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.03050109, 0, 0.132075474, 0)
+TextLabel_4.Size = UDim2.new(0, 431, 0, 39)
+TextLabel_4.Font = Enum.Font.Nunito
+TextLabel_4.Text = "MADE BY 10PMNJ2"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Speed.Name = "Speed"
+Speed.Parent = Player_2
+Speed.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.0326797403, 0, 0.180048659, 0)
+Speed.Size = UDim2.new(0, 182, 0, 50)
+Speed.Text = "WalkSpeed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+Speed.MouseButton1Click:Connect(function(v)
+	v = SC.Text
+	local pc = game.Players.LocalPlayer.Character
+	pc.Humanoid.WalkSpeed = v
+end)
+
+SC.Name = "SC"
+SC.Parent = Speed
+SC.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+SC.Position = UDim2.new(0.142857149, 0, 1, 0)
+SC.Size = UDim2.new(0, 140, 0, 50)
+SC.Font = Enum.Font.SourceSans
+SC.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+SC.PlaceholderText = "ENTER WALKSPEED"
+SC.Text = ""
+SC.TextColor3 = Color3.fromRGB(232, 232, 232)
+SC.TextScaled = true
+SC.TextSize = 14.000
+SC.TextWrapped = true
+
+
+JumpingH.Name = "JumpingH"
+JumpingH.Parent = Player_2
+JumpingH.BackgroundColor3 = Color3.fromRGB(152, 255, 120)
+JumpingH.BorderSizePixel = 0
+JumpingH.Position = UDim2.new(0.542483628, 0, 0.180048674, 0)
+JumpingH.Size = UDim2.new(0, 182, 0, 50)
+JumpingH.Text = "JumpHeight"
+JumpingH.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpingH.TextScaled = true
+JumpingH.TextSize = 14.000
+JumpingH.TextWrapped = true
+JumpingH.MouseButton1Click:Connect(function(v)
+	v = JHC.Text
+	local pc = game.Players.LocalPlayer.Character
+	pc.Humanoid.UseJumpPower = true
+	pc.Humanoid.JumpPower = v
+end)
+
+JHC.Name = "JHC"
+JHC.Parent = JumpingH
+JHC.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+JHC.Position = UDim2.new(0.142857149, 0, 1, 0)
+JHC.Size = UDim2.new(0, 140, 0, 50)
+JHC.Font = Enum.Font.SourceSans
+JHC.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+JHC.PlaceholderText = "ENTER JUMPHEIGHT"
+JHC.Text = ""
+JHC.TextColor3 = Color3.fromRGB(232, 232, 232)
+JHC.TextScaled = true
+JHC.TextSize = 14.000
+JHC.TextWrapped = true
+
+B3.Name = "B3"
+B3.Parent = Player_2
+B3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+B3.BorderSizePixel = 0
+B3.Position = UDim2.new(0.686274469, 0, 0.766423345, 0)
+B3.Size = UDim2.new(0, 94, 0, 50)
+B3.Text = "Back"
+B3.TextColor3 = Color3.fromRGB(255, 255, 255)
+B3.TextScaled = true
+B3.TextSize = 14.000
+B3.TextWrapped = true
+B3.MouseButton1Click:Connect(function()
+	Player_2.Visible = false
+	Picker.Visible = true
+end)
+
+-- Dragging ui
+
+Player_2.Active = true
+Player_2.Draggable = true
+
+Picker.Active = true
+Picker.Draggable = true
+
+HUBS.Active = true
+HUBS.Draggable = true
+
+Games_2.Active = true
+Games_2.Draggable = true
