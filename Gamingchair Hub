@@ -3,7 +3,7 @@ local venyx = library.new("GamingChair Hub", 5013109572)
 
 -- themes
 local themes = {
-Background = Color3.fromRGB(24, 24, 24),
+Background = Color3.fromRGB(0,0,0),
 Glow = Color3.fromRGB(0, 0, 0),
 Accent = Color3.fromRGB(10, 10, 10),
 LightContrast = Color3.fromRGB(20, 20, 20),
@@ -261,6 +261,13 @@ end)
 section11:addSlider("Jumppower", 50, 50, 1000, function(value)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 end)
+
+section11:addButton("Anti AFK kick", function()
+while wait(5) do
+        game.Players.localPlayer.Character.Humanoid.Jump = true
+end
+end)
+local isloop = false
 
 section12:addButton("Infinty Yield", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
